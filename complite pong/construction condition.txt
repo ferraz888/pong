@@ -1,0 +1,55 @@
+si (position ballY < 500 et rebont bas = false et 0<positionX<100 et positonupbar = -1)
+	remonte
+
+	si (position ballX < 280 et rebont gauche = false)
+		direction: droit
+	et si ( possition ballX == 280)
+		rebond gauche = true
+	si (position ballX < 0 et rebont gauche = true)
+		direction: gauche
+	et si ( possition ballX == 0)
+		rebond gauche = false
+et si (position ballY = 530)  
+	rebont bas = true
+
+si (position ballY < 500 et rebont bas = false et 100<positionX<200 et positonupbar = 0)
+	remonte
+
+	si (position ballX < 280 et rebont gauche = false)
+		direction: droit
+	et si ( possition ballX == 280)
+		rebond gauche = true
+	si (position ballX < 0 et rebont gauche = true)
+		direction: gauche
+	et si ( possition ballX == 0)
+		rebond gauche = false
+et si (position ballY = 530)  
+	rebont bas = true
+
+si (position ballY < 500 et rebont bas = false et 200<positionX<300 et positonupbar = 1)
+	remonte
+
+	si (position ballX < 280 et rebont gauche = false)
+		direction: droit
+	et si ( possition ballX == 280)
+		rebond gauche = true
+	si (position ballX < 0 et rebont gauche = true)
+		direction: gauche
+	et si ( possition ballX == 0)
+		rebond gauche = false
+et si (position ballY = 530)  
+	rebont bas = true
+
+
+si (position ballY > 0 et rebont = true)
+	desand
+	si (position ballX < 280 et rebont gauche = false)
+		direction: droit
+	et si ( possition ballX == 280)
+		rebond gauche = true
+	si (position ballX < 0 et rebont gauche = true)
+		direction: gauche
+	et si ( possition ballX == 0)
+		rebond gauche = false
+et si (position ballY = 0)
+	rebont bas = faut
